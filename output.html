@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.3/jspdf.min.js" async></script>
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.js" async></script>
+</head>
+
+<body>
+    <div>
+        <button id="pdf" onclick="getPDF()">Create PDF</button>
+    </div>
+    <div id="output-page1">
+        <span class="section-heading">A. CUSTOMER DETAILS</span>
+        <div id="title-customer-details">
+
+            <p class="title" id="title-customer">Customer:</p>
+            <p class="title" id="title-address">Address:</p>
+            <!-- <p class="title" id="title-phone">Phone:</p> -->
+            <p class="title" id="title-phone-home">Home:</p>
+            <p class="title" class="title" id="title-phone-mobile">Mobile:</p>
+            <!-- <p id="customer-name"></p>
+<p id="customer-name"></p> -->
+        </div>
+        <div id="entry-customer-details">
+            <p class="entry" id="customer-name"></p>
+            <p class="entry" id="customer-address"></p>
+            <p class="entry" id="customer-phone-home"></p>
+            <p class="entry" id="customer-phone-mobile"></p>
+        </div>
+    </div>
+    <script src="/outputscript.js" async defer></script>
+</body>
+
+</html>
