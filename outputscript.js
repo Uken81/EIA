@@ -11,8 +11,8 @@
     //Phone
     const placehPhone = document.getElementById("customer-phone-home");
     const placeMPhone = document.getElementById("customer-phone-mobile");
-    let hphone = localStorage.getItem("hPhone");
-    let mphone = localStorage.getItem("mPhone");
+    let hphone = localStorage.getItem("hphone");
+    let mphone = localStorage.getItem("mphone");
     placehPhone.innerHTML = hphone;
     placeMPhone.innerHTML = mphone;
 

@@ -12,48 +12,53 @@
 
 <body>
     <div id="input-page1">
-        <form method="POST">
+        <form id="customer-form" method="POST">
             <span>A. CUSTOMER DETAILS</span>
             <fieldset>
                 <legend>Customer Information</legend>
                 <label for="fname">First name:</label>
-                <input type="text" id="fname" name="fname"><br><br>
+                <input type="text" class="input-field" id="fname" name="fname"><br><br>
                 <label for="lname">Last name:</label>
-                <input type="text" id="lname" name="lname"><br><br>
+                <input type="text" class="input-field" id="lname" name="lname"><br><br>
                 <label for="address">Address:</label>
-                <input type="text" id="address" name="address"><br><br>
+                <input type="text" class="input-field" id="address" name="address"><br><br>
                 <label for="home-phone">Home Phone:</label>
-                <input type="tel" id="home-phone" name="home-phone"><br><br>
+                <input type="tel" class="input-field" id="hphone" name="hphone"><br><br>
                 <label for="mobile-phone">Mobile:</label>
-                <input type="tel" id="mobile-phone" name="mobile-phone"><br><br>
+                <input type="tel" class="input-field" id="mphone" name="mphone"><br><br>
             </fieldset>
             <span>B. ADDRESS OF THE INSTALLATION TO BE AUDITED</span>
             <fieldset>
                 <legend>Address To Audit</legend>
                 <label for="install-address">Address:</label>
-                <input type="text" id="install-address" name="install-address"><br><br>
+                <input type="text" class="input-field" id="install-address" name="install-address"><br><br>
                 <label for="age-of-installation">Estimated age of the electrical installation (years):</label>
-                <input type="number" id="age-of-installation" name="age-of-installation" min="1"><br><br>
+                <input type="number" class="input-field" id="age-of-installation" name="age-of-installation"
+                    min="1"><br><br>
                 <fieldset>
-                <span>Evidence of alterations or additions:</span><br>
-                <label for="alterations-additions-yes">Yes:</label>
-                <input type="radio" id="alterations-additions-yes" name="is-altered" value="yes">
-                <label for="alterations-additions-no">No:</label>
-                <input type="radio" id="alterations-additions-no" name="is-altered" value="no"><br><br>
-                <label for="alteration-age">estimated age (years):</label>
-                <input type="number" id="alteration-age" name="alteration-age" min="1"><br><br>
-            </fieldset>
+                    <span>Evidence of alterations or additions:</span><br>
+                    <label for="alterations-additions-yes">Yes:</label>
+                    <input type="radio" class="input-field" id="alterations-additions-yes" name="is-altered"
+                        value="yes">
+                    <label for="alterations-additions-no">No:</label>
+                    <input type="radio" class="input-field" id="alterations-additions-no" name="is-altered"
+                        value="no"><br><br>
+                    <label for="alteration-age">estimated age (years):</label>
+                    <input type="number" class="input-field" id="alteration-age" name="alteration-age" min="1"><br><br>
+                </fieldset>
                 <label for="previous-audit">Date of previous Audit: (if any):</label>
-                <input type="date" id="previous-audit" name="previous-audit"><br><br>
+                <input type="date" class="input-field" id="previous-audit" name="previous-audit"><br><br>
             </fieldset>
             <br><br>
             <fieldset>
                 <span>C. PURPOSE OF THE REPORT</span><br><br>
                 <label for="purpose">Purpose for which this report is requested:</label>
-                <textarea cols="35" rows="5" id="purpose" name="purpose-of-report"></textarea><br><br>
+                <textarea cols="35" rows="5" class="input-field" id="purpose"
+                    name="purpose-of-report"></textarea><br><br>
                 <span>D. EXTENT OF THE INSTALLATION AND LIMITATIONS OF THE INSPECTION AND TESTING</span><br><br>
-                <label for="extent">Extent of the electrical installation and agreed limitations, if any, on the inspection and testing:</label>
-                <textarea cols="35" rows="8" id="purpose" name="purpose-of-report"></textarea>
+                <label for="extent">Extent of the electrical installation and agreed limitations, if any, on the
+                    inspection and testing:</label>
+                <textarea cols="35" rows="8" class="input-field" id="purpose" name="purpose-of-report"></textarea>
             </fieldset>
             <br><br>
             <button class="btn btn-primary" id="name-submit">Submit</button>
