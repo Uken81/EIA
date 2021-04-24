@@ -20,8 +20,9 @@ const submitValues = () => {
 }
 
 document.getElementById("name-submit").addEventListener("click", function(event) {
-    submitValues();
     event.preventDefault();
+    submitValues();
+    
 })
 
 
