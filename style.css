@@ -8,9 +8,9 @@
 #output-page1 {
   display: grid;
   grid-template: repeat(4, 1fr) / repeat(4, 1fr);
-  min-width: 100rem;
-  min-height: 75rem;
-  opacity: 0;
+  /* min-width: 100rem;
+  min-height: 75rem; */
+  opacity: 10;
 }
 
 .section-heading {
